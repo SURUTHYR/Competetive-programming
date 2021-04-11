@@ -1,4 +1,4 @@
-s=input("enter the string")
+s="Hello"
 d={}
 for i in s:
     if i in d:
