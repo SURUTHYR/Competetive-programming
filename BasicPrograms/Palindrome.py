@@ -6,14 +6,13 @@ def check_palindrome(s):
             d[i] += 1
         else:
             d[i] = 1
-    print(d)
-    v=d.values()
-    print(v)
-    for i in v:
-        if (v==1):
-            print("True")
-        else:
-            print("False")
-
-
-check_palindrome("aba")
+    print(str(d))
+    count=0
+    for i in d:
+        if(d[i]%2!=0):
+            count+=1
+    if(count>1):
+        print("It is not a palindrome")
+    else:
+        print("It is a palindrome")
+check_palindrome("suruthy")
