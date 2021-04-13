@@ -14,11 +14,16 @@ def check(s):
         # close
         elif i == '}' or i == ']' or i == ')':
             # pop from stack
+            if(st.is_empty()):
+                return False
+
             temp = st.pop()
             # dict[pop] = i
-            if dict[temp] != i:
+            if dict[temp] == i:
                 return False
-    return True
+    if(st.is_empty()):
+        return True
+    return False
 
 
 str = "{[()]}("
