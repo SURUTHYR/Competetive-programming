@@ -16,7 +16,7 @@ def consonant_vowel(word):
 def vowel_consonant(word):
     for i in range(0,len(words)):
             if (i%2==0 and word[i]  in vowel_list ) or (i%2!=0 and word[i]  not in vowel_list):
-                pass
+                break
             else:
                 return 0
     return 1
